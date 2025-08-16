@@ -1,28 +1,30 @@
 title: Arnav Dutta
 description: Portfolio of projects and reports
-theme: minima
-plugins:
-  - jekyll-seo-tag
-
-# Site settings
 author: Arnav Dutta
 url: "https://404arnavdutta.github.io"
-baseurl: ""
+baseurl: "" # leave empty unless your site is in a subfolder
 
-# Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
+# Theme
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 
-# Navigation (order of tabs at the top)
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Minimal Mistakes settings
+minimal_mistakes_skin: "dark"  # try "default", "dark", "air", "contrast", etc.
+
+# Social links
+social:
+  type: "Person"
+  name: "Arnav Dutta"
+  links:
+    - "https://github.com/404ArnavDutta"
+    - "https://www.linkedin.com/in/arnav404/"
+    - "mailto:your@email.com"  # optional
+
+# Navigation
 header_pages:
   - index.md
   - projects/index.md
   - reports/index.md
-
-# Social links (footer icons)
-minima:
-  social_links:
-    - { platform: github,  user_url: "https://github.com/404ArnavDutta" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/arnav404/" }
