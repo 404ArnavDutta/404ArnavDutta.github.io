@@ -6,4 +6,4 @@ permalink: /reports/
 
 # Reports
 
-(reports will appear here)
+[Nuclear Magnetic Resonance — Year 2 Lab Report](/assets/reports/NUCLEAR_MAGNETIC_RESONANCE.pdf)
