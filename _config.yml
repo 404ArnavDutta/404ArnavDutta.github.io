@@ -15,8 +15,14 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-# Navigation (minima theme)
+# Navigation (order of tabs at the top)
+header_pages:
+  - index.md
+  - projects/index.md
+  - reports/index.md
+
+# Social links (footer icons)
 minima:
   social_links:
-    - { platform: github,  user_url: "https://404arnavdutta.github.io" }
+    - { platform: github,  user_url: "https://github.com/404ArnavDutta" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/arnav404/" }
