@@ -2,6 +2,7 @@
 layout: single
 title: "Reports"
 permalink: /reports/
+header: false
 ---
 
 
