@@ -5,7 +5,6 @@ permalink: /projects/
 header: false
 ---
 
-# Projects
 
 Quick links to code and write-ups. Use search or sort below.
 
