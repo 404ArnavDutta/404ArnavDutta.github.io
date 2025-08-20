@@ -5,8 +5,6 @@ permalink: /reports/
 header: false
 ---
 
-
-
 Deeper dives and write-ups. Use search or sort to find what you need.
 
 <div style="margin:1.5rem 0;">
@@ -18,9 +16,7 @@ Deeper dives and write-ups. Use search or sort to find what you need.
 
 <div style="margin:1.5rem 0;">
   <label for="report-sort" style="font-weight:600; margin-right:.5rem;">Sort</label>
-  <select id="report-sort"
-    style="width:200px; padding:.6rem .75rem; border-radius:.5rem; border:1px solid #444;
-           background-color:#1e1e1e; color:#f5f5f5; font-weight:500;">
+  <select id="report-sort">
     <option value="new">Newest first</option>
     <option value="old">Oldest first</option>
   </select>
