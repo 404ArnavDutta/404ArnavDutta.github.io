@@ -8,7 +8,7 @@ header: false
 reports:
   - title: "Nuclear Magnetic Resonance — Year 2 Lab Report"
     url: "/assets/reports/NUCLEAR_MAGNETIC_RESONANCE.pdf"
-    date: 2024-03-15
+    date: 2024-12-3
     summary: "Year-2 physics lab: NMR principles, setup, and results."
 ---
 
