@@ -29,5 +29,5 @@ Deeper dives and write-ups. Use search or sort to find what you need.
 ---
 
 ### Nuclear Magnetic Resonance — Year 2 Lab Report  
-📅 03/12/2024  
+03/12/2024  
 [Download PDF](/assets/reports/NUCLEAR_MAGNETIC_RESONANCE.pdf)
