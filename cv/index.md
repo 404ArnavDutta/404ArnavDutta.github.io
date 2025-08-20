@@ -4,7 +4,6 @@ title: "CV"
 permalink: /cv/
 ---
 
-# CV
 
 You can view/download my CV here:
 
