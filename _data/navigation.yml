@@ -5,3 +5,5 @@ main:
     url: /projects/
   - title: "Reports"
     url: /reports/
+  - title: "CV"
+    url: /cv/
