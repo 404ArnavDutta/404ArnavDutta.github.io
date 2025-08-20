@@ -5,7 +5,7 @@ permalink: /reports/
 header: false
 ---
 
-# Reports
+
 
 Deeper dives and write-ups. Use search or sort to find what you need.
 
