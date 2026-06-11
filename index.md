@@ -1,46 +1,53 @@
 ---
 layout: single
-title: "Home"
-
-home_cards:
-  - title: "Projects"
-    excerpt: "Code, models, and experiments."
-    url: "/projects/"
-    btn_label: "View projects →"
-    btn_class: "btn--primary"
-  - title: "Reports"
-    excerpt: "Lab write-ups and technical notes."
-    url: "/reports/"
-    btn_label: "Read reports →"
-    btn_class: "btn--primary"
-  - title: "CV"
-    excerpt: "Academic and professional experience."
-    url: "/cv/"
-    btn_label: "View CV →"
-    btn_class: "btn--primary"
+title: Home
+classes:
+  - home-page
 ---
 
-<!-- Hide masthead (nav bar) only on the Home page -->
-<style>
-  .masthead { display: none !important; }
+<div class="home-hero">
+  <h1 class="hero-name">Arnav Dutta</h1>
+  <p class="hero-sub">Physics undergraduate. Here I share projects, lab reports, and whatever else I'm working on.</p>
+</div>
 
-  /* Make cards stack vertically and look like tidy boxes */
-  .feature__wrapper { display: block !important; }
-  .feature__item {
-    width: 100% !important;
-    margin: 0 0 1rem 0 !important;
-    padding: 1rem 1.25rem !important;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,.08);
-    background: var(--mm-color-bg-elevated, #1f2937);
-  }
-  .feature__item h2 { margin: 0 0 .25rem 0; }
-  .feature__item p  { margin: 0 0 .75rem 0; }
-</style>
+<div class="featured-card">
+  <div>
+    <p class="mono-label">// featured project</p>
+    <p class="feat-title">Custom Linux workstation</p>
+    <p class="feat-desc">A PC built from the ground up, optimised for coding, simulation, and sim racing.</p>
+  </div>
+  <span class="badge">coming soon</span>
+</div>
 
-# Hi, I’m Arnav Dutta 👋
+<div class="home-cards">
+  <a class="home-card" href="/projects/">
+    <p class="mono-label">// 01</p>
+    <p class="card-title">Projects</p>
+    <p class="card-desc">Code, simulations, and experiments.</p>
+    <span class="card-link">View projects &rarr;</span>
+  </a>
+  <a class="home-card" href="/reports/">
+    <p class="mono-label">// 02</p>
+    <p class="card-title">Reports</p>
+    <p class="card-desc">Lab write-ups and technical notes.</p>
+    <span class="card-link">Read reports &rarr;</span>
+  </a>
+  <a class="home-card" href="/cv/">
+    <p class="mono-label">// 03</p>
+    <p class="card-title">CV</p>
+    <p class="card-desc">Academic and professional experience.</p>
+    <span class="card-link">View CV &rarr;</span>
+  </a>
+</div>
 
-Welcome to my portfolio!  
-Here I’ll share selected **projects** and **reports**.
-
-{% include feature_row id="home_cards" %}
+<div class="latest">
+  <p class="mono-label">// latest reports</p>
+  <a class="latest-row" href="/reports/">
+    <span class="latest-title">Nuclear magnetic resonance &mdash; year two lab</span>
+    <span class="latest-date">year 2</span>
+  </a>
+  <div class="latest-row">
+    <span class="latest-title">Geometries of graphene &mdash; third year report</span>
+    <span class="badge">coming soon</span>
+  </div>
+</div>
