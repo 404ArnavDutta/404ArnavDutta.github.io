@@ -266,3 +266,19 @@ body {
     transition: none;
   }
 }
+/* --- Fix select dropdown on dark background --- */
+select {
+  background: #1e1e22;
+  color: #e0e0e0;
+  border: 1px solid #2a2a2e;
+  border-radius: 6px;
+  padding: 6px 12px;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #cc1010;
+}
