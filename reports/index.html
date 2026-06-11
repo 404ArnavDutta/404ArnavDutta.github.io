@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reports — Arnav Dutta</title>
+  <meta name="description" content="Lab write-ups and technical notes by Arnav Dutta.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <div class="revlights" id="revlights" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a class="nav-brand" href="/">Arnav Dutta</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/projects/">Projects</a>
+      <a href="/reports/" class="active">Reports</a>
+      <a href="/cv/">CV</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1 class="page-title reveal">Reports</h1>
+    <p class="page-sub reveal">Lab write-ups and technical notes. Use search or sort to find what you need.</p>
+
+    <div class="toolbar reveal">
+      <input type="search" id="search" placeholder="Search reports..." aria-label="Search reports">
+      <select id="sort" aria-label="Sort reports">
+        <option value="new">Newest first</option>
+        <option value="old">Oldest first</option>
+      </select>
+    </div>
+
+    <div id="report-list">
+      <article class="item-card reveal" data-date="2024-12-03" data-title="nuclear magnetic resonance year 2 lab report nmr">
+        <div>
+          <p class="item-title">Nuclear magnetic resonance &mdash; year 2 lab report</p>
+          <p class="item-meta">Dec 2024</p>
+        </div>
+        <a class="btn" href="/assets/reports/NUCLEAR_MAGNETIC_RESONANCE.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </article>
+
+      <article class="item-card reveal" data-date="2026-06-01" data-title="geometries of graphene third year report">
+        <div>
+          <p class="item-title">Geometries of graphene &mdash; third year report</p>
+          <p class="item-meta">Year 3</p>
+        </div>
+        <span class="badge">coming soon</span>
+      </article>
+    </div>
+
+    <p class="empty-note" id="no-results" style="display:none;">No reports match your search.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 Arnav Dutta</span>
+      <div class="footer-links">
+        <a class="footer-link" href="https://github.com/404ArnavDutta" target="_blank" rel="noopener">
+          <span class="link-label">github</span>
+          <span class="scramble" data-text="github.com/404ArnavDutta"></span>
+        </a>
+        <a class="footer-link" href="https://www.linkedin.com/in/arnav404/" target="_blank" rel="noopener">
+          <span class="link-label">linkedin</span>
+          <span class="scramble" data-text="linkedin.com/in/arnav404"></span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    (function () {
+      var search = document.getElementById("search");
+      var sort = document.getElementById("sort");
+      var list = document.getElementById("report-list");
+      var noResults = document.getElementById("no-results");
+
+      function apply() {
+        var q = search.value.trim().toLowerCase();
+        var cards = Array.prototype.slice.call(list.querySelectorAll(".item-card"));
+        var visible = 0;
+
+        cards.forEach(function (c) {
+          var match = !q || c.dataset.title.indexOf(q) !== -1;
+          c.style.display = match ? "" : "none";
+          if (match) visible++;
+        });
+
+        noResults.style.display = visible ? "none" : "";
+
+        cards.sort(function (a, b) {
+          return sort.value === "new"
+            ? b.dataset.date.localeCompare(a.dataset.date)
+            : a.dataset.date.localeCompare(b.dataset.date);
+        });
+        cards.forEach(function (c) { list.appendChild(c); });
+      }
+
+      search.addEventListener("input", apply);
+      sort.addEventListener("change", apply);
+      apply();
+    })();
+  </script>
+</body>
+</html>
